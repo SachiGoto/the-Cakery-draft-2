@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page
+    </title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+<link href="https://cdn.jsdelivr.net/gh/hoomanbahreini/bootstrap-half-and-quarter-grid/fractional-grid.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://www.marcoguglie.it/Codepen/RoundedAnimatedNav/js/velocity.min.js"></script>
+<script src="./theCakery.js" defer></script>
+</head>
+
+<style>
+    
+    #heroImageContainer{
+      background-image:url(./img/theCakeryShop.png);
+      background-size:cover;
+      background-repeat:no-repeat;
+      width:80%;
+      height:200px;
+      background-position:center;
+      margin-bottom:100px;
+
+    }
+
+    .img, .product_image img{
+            width:100% !important;
+            object-fit: cover;
+            height:250px;
+            object-position: center;
+    }
+
+
+
+    p, h1,h2{
+      text-align: center;
+    }
+
+    .wavyT{
+      height:60px;
+    }
+
+    @media(min-width:768px){
+
+      #heroImageContainer{
+        height:500px;
+      }
+ 
+      /* #footerLogo{
+        width:50%;
+    } */
+
+    .wavyT{
+      height:100px;
+    }
+  
+    h1{
+      font-size:35px !important;
+    }
+    .bigContainer p{
+           padding-left:45px !important;
+           font-size:22pxx !important;
+       }
+       h2{
+           margin-bottom:20px !important;
+           font-size:30px !important;
+       }
+
+       .bigContainer{
+         padding-bottom:20px;
+       }
+
+    
+
+    }
+
+    @media(min-width:1200px){
+     
+    #hivesImg{
+     object-fit: contain;
+  
+    
+    }
+
+    .wavyT, .wavyB{
+      height:200px;
+    }
+
+    #heroImageContainer{
+      margin-bottom:200px;
+    }
+
+    h1{
+      font-size:40px !important;
+    }
+    h2{
+      font-size:35px;
+    }
+
+
+  }
+
+</style>
+
+<body>
+ 
+  
+         
+    <nav>
+      <ul class="cd-primary-nav">
+        <li><a href="./homepage.html">The Cakery</a></li>
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./product.html">Products</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+        <li><a href="./contactpage.html">Contact Us</a></li>
+        <li class="mt-5"><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-facebook-f"></i></li>
+        <div class="d-flex justify-content-center">
+          <img src="./img/theCakeryLogo.svg" width="140">
+        </div>
+        
+      </ul>
+    </nav>
+  
+      <header clas="row" id="headerIcons">
+          <div class="column col-4">
+              <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+              </div>
+          <div class="col-4 column">
+          <img class="logoSize" src="./img/theCakeryLogo.svg">
+          </div>
+         
+        <div class="col-4 column">
+          <img id="cartIcon" src="./img/shoppingCartIcon.png" width="30">
+          </div>
+  
+    </header>
+
+    <div class="cd-overlay-nav">
+      <span></span>
+    </div> <!-- cd-overlay-nav -->
+  
+    <div class="cd-overlay-content">
+      <span></span>
+    </div> <!-- cd-overlay-content -->
+
+    <main class="cd-content">
+      <!-- your content here -->
+      
+    
+    </main> <!-- cd-content -->
+
+        <section class=" mt-5 container" id="heroImageContainer">
+
+        </section>
+
+        <h1 class="mt-5">The owner of the Cakery</h1>
+        <div class="wavyT"></div>
+       <div class="bigContainer">
+        <section class="container">
+        <div class="row">
+            <div class="col-11 ">
+               
+            </div>
+            <div class="col-10 col-md-6 col-lg-5 p-0" id="owner">
+                <img class="img" src="./img/theCakeryOwner.png" alt="owner">
+            </div>
+            <p class=" mt-3 col-10 col-md-6 col-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum ipsam dolores, adipisci esse tempore totam porro! Mollitia assumenda deleniti praesentium quia nihil non expedita labore iste! Dolores, consequatur temporibus?</p>
+            </div>
+           
+        </section>
+      </div>
+        <div class="wavyB"></div>
+        
+        <h1>The origin of the Cakery</h1>
+        <div class="wavyT"></div>
+        <div class="bigContainer">
+        
+        <section class="container">
+            <div class="row">
+                <div class="col-11">
+                    
+                </div>
+                <div class="col-10 col-md-6 col-lg-5 p-0" id="originOfTheShop">
+                    <img class="img" src="./img/originalShop.jpg" alt="originOfTheShop">
+                </div>
+                <p class=" mt-3 col-10 col-md-6 col-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum ipsam dolores, adipisci esse tempore totam porro! Mollitia assumenda deleniti praesentium quia nihil non expedita labore iste! Dolores, consequatur temporibus?</p>
+                </div>
+            </section>
+          </div>
+            <div class="wavyB"></div>
+         
+
+            <h1>The Cakery spirits</h1>
+            <div class="wavyT"></div>
+        <div class="bigContainer">
+         
+            <section class="container">
+                <div class="row">
+                    <div class="col-11">
+                       
+                    </div>
+                    <div class="col-10 col-md-6 col-lg-5 p-0" id="theCakerySpirits">
+                        <img class="img" src="./img/theCakerySpirits.jpg" alt="theCakerySpirits">
+                    </div>
+                    <p class=" mt-3 col-10  col-md-6 col-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum ipsam dolores, adipisci esse tempore totam porro! Mollitia assumenda deleniti praesentium quia nihil non expedita labore iste! Dolores, consequatur temporibus?</p>
+                    </div>
+                </section>
+              </div>
+                <div class="wavyB"></div>
+             
+                <h1 class="container">We are partnered with</h1>
+                <div class="wavyT"></div>
+        <div class="bigContainer">
+        
+               
+
+                <section class="container">
+                    <div class="row">
+                        <div class="col-11">
+                        <h2>Anita's mill</h2>
+                        </div>
+                        <div class="col-10 col-md-6 col-lg-5 p-0 product_image">
+                            <img src="./img/anita's_mill.png">
+                        </div>
+                        <p class="mt-3 col-10 col-md-6 col-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum ipsam dolores, adipisci esse tempore totam porro!</p>
+                        </div>
+                    </section>
+                  </div>
+                    <div class="wavyB"></div>
+
+                    <div class="wavyT"></div>
+        <div class="bigContainer">
+        
+                    <section class="container">
+                        <div class="row">
+                            <div class="col-11">
+                            <h2>Avalon</h2>
+                            </div>
+                            <div class="col-10 col-md-6 col-lg-5 p-0 product_image">
+                                <img src="./img/avalon.jpeg">
+                            </div>
+                            <p class=" mt-3 col-10 col-md-6 col-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum ipsam dolores, adipisci esse tempore totam porro!</p>
+                            </div>
+                        </section>
+                      </div>
+                        <div class="wavyB"></div>
+
+
+                      
+                        <div class="wavyT"></div>
+        <div class="bigContainer">
+      
+                        <section class="container">
+                            <div class="row">
+                                <div class="col-11">
+                                  <h2>Hives for humanity</h2>
+                                </div>
+                                <div class="col-11 col-md-6 col-lg-5 p-0 product_image">
+                                    <img id="hivesImg" src="./img/hives_for_humanity.png">
+                                </div>
+                                <p class=" mt-3 col-10 col-md-6 col-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum ipsam dolores, adipisci esse tempore totam porro!</p>
+                                </div>
+                            </section>
+                          </div>
+                            <div class="wavyB"></div>
+
+                          
+                            <div class="wavyT"></div>
+        <div class="bigContainer">
+        
+                            <section class="container">
+                                <div class="row">
+                                    <div class="col-11">
+                                      <h2>Vancouver salt</h2>
+                                    </div>
+                                    <div class="col-10 col-md-6 col-lg-5 p-0 product_image" >
+                                        <img src="./img/vancouver_salt.png">
+                                    </div>
+                                    <p class=" mt-3 col-10 col-md-6 col-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum ipsam dolores, adipisci esse tempore totam porro!</p>
+                                    </div>
+                                </section>
+                              </div>
+                                <div class="wavyB"></div>
+
+
+                                <div class="footerT"></div>
+                              
+                    
+             <footer>
+               <div class="footer footerContainer row">
+                
+                <div class="col-sm-12 col-md-12 column">
+                  <img id="footerLogo" src="./img/theCakeryLogo.svg">
+                </div>
+           
+                <div  class="col-lg-4 d-none d-lg-block justify-content-center flex-column text-center">
+                  <h3>Quick Links</h3>
+                  <p>About the Cakery</p>
+                  <p>Gallery</p>
+                  <p>Products</p>
+                  <p>Contact Us</p>
+                </div>
+              
+                
+                <div class="col-sm-12 col-md-5 col-lg-4 d-flex justify-content-center flex-column text-center">
+                
+                  <h3>Find Us</h3>
+                  <p>Address: 398 bute street, Vancouver, BC V6E 1Y9</p>
+                  <p>Phone: 604-397-6590</p>
+                  <p>Email: theCakery@gmail.com</p>
+                </div>
+           
+                  <div class="col-sm-12 col-md-5 col-lg-4 justify-content-center flex-column text-center">
+                  <h3>Hours:</h3>
+                  <p>Monday to Fridy <br>8am - 4pm</p>
+                  <p>Saturday and Sunday<br> 8am - 5pm</p>
+             
+                </div>
+                </div>
+              
+               
+           
+               </footer>
+              
+</body>
+</html>

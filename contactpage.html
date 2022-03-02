@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page
+    </title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+<link href="https://cdn.jsdelivr.net/gh/hoomanbahreini/bootstrap-half-and-quarter-grid/fractional-grid.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://www.marcoguglie.it/Codepen/RoundedAnimatedNav/js/velocity.min.js"></script>
+<script src="./theCakery.js" defer></script>
+</head>
+
+    
+     <style>
+ 
+/* input, label{
+          width:60vw;
+        } */
+  
+       #google_map{
+         width:40vw;
+         height:40vw;
+         margin-right:2%;
+         
+       }
+
+       #theCakeryShop{
+         background-image:url(./img/theCakeryShop.png);
+         background-size:cover;
+         width:40vw;
+         height:40vw;
+         margin-left:2%;
+         background-position:center;
+       }
+
+       .btn{
+         width:50%;
+         background-color:#f4e2ca !important;
+         box-shadow: -1px 3px 0px 0px #cca36f !important;
+
+       }
+
+       #dropBox{
+         width:70vw;
+         height:30vh;
+         background-color:white;
+         border:1px gray solid;
+       }
+
+       /* .wavyT{
+         height:50px;
+       } */
+
+       .inquiryFormBg{
+         height:600px;
+        
+      
+       }
+
+       .orderFormBg{
+         height:1500px;
+       
+      
+       }
+
+       .app{
+         background-color:#F4E1CB;
+       }
+
+    
+
+         .bigContainer{
+           position:relative;
+           width:100%;
+           display:flex;
+           justify-content:center;
+          
+         }
+
+
+         .formContainer{
+             border: 1px solid grey;
+             padding:20px;
+             margin-top:10px;
+             position:absolute;
+             display:flex;
+             justify-content: center;
+       
+         
+         }
+         .formContainer .row{
+          width:55vw;
+        }
+
+         /* .bigContainer{
+           height:500px;
+         } */
+
+         .displayNone{
+             opacity:0;
+             transition: opacity 2s;
+         }
+
+         .display{
+             
+             opacity:1;
+             transition: opacity 2s;
+         }
+
+      
+
+         #note{
+             color:red;
+             text-align:center;
+         }
+
+         label, input{
+             padding:10px;
+         }
+
+         h2{
+             text-align:center;
+         }
+       
+         #orderForm{
+           background-color:white;
+           width:75%;
+          
+         }
+
+         #inquiryForm{
+           background-color:#DFC6DC;
+           width:75%;
+
+         }
+
+        .formContainer{
+          border:none;
+        }
+
+/* ----------------------------------- */
+.body {
+  position: relative;
+  height:13vh;
+  display: flex;
+  justify-content: center;
+
+} 
+
+
+.swipe {
+  width: 40%;
+  height:.25rem;
+  background-color: black;
+  opacity: .5;
+  border-radius: 10px;
+  margin: .5rem auto;
+}
+
+
+
+ .toggleLable, .toggle {
+  height: 2.8rem;
+  border-radius: 100px;
+  width:55%;
+} 
+
+.toggleLable {
+
+  background-color: rgba(253, 251, 251, 1);
+  border-radius: 100px;
+  position: relative;
+  margin: 1.8rem 0 4rem 0; 
+
+}
+
+.light, .dark{
+  margin:0;
+  font-size:0.8rem !important;
+}
+
+.toggle {
+  position: absolute;
+  width: 55%;
+  background-color: #dfc7dc;
+  box-shadow: 0 2px 15px rgba(0,0,0,.15);
+  transition: transform .3s;
+}
+.names {
+  font-size: 90%;
+  font-weight: bolder;
+  width: 100%;
+  /* margin-left: 17.5%; */
+  margin-top: .5%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+  align-items:center;
+  height:2.8rem;
+}
+
+
+/* -------- Switch Styles ------------*/
+ [type="checkbox"] {
+  display: none;
+} 
+/* Toggle */
+ [type="checkbox"]:checked + .app .toggle{
+  transform: translateX(100%);
+  background-color: #dfc7dc;
+}
+
+[type="checkbox"]:checked + .app .dark {
+  opacity: 0.5;
+}
+[type="checkbox"]:checked + .app .light {
+  opacity: .5;
+} 
+
+[type="checkbox"] {
+  display: none;
+}
+/* Toggle */
+/* [type="checkbox"]:checked + .app .toggle{
+  transform: translateX(100%);
+  background-color: #34323D;
+} */
+/* [type="checkbox"]:checked + .app .dark{
+  opacity: 1;
+}
+[type="checkbox"]:checked + .app .light{
+  opacity: .5;
+}  */
+
+/* Fab */
+ /* [type="checkbox"]:checked + .app .fab{
+  background-color: #34323D;
+}  */
+/* [type="checkbox"]:checked + .app .arrow,
+[type="checkbox"]:checked + .app .mark,
+[type="checkbox"]:checked + .app .battery{
+  background-color: white;
+} */
+/* [type="checkbox"]:checked + .app .network{
+  border-color: transparent transparent white transparent;
+} */
+
+ /* [type="checkbox"]:checked + .app .swipe{
+  background-color: #34323D;
+  opacity: 1;
+}     */
+
+
+      
+
+
+    @media(min-width:1200px){
+        
+      /* .wavyT{
+        height:20vh;
+      } */
+
+      #google_map{
+         width:30vw;
+         height:30vw;
+        
+         
+       }
+
+       #theCakeryShop{
+         
+         width:30vw;
+         height:30vw;
+        
+       }
+
+      #inquiryForm{
+        width: 50%;
+
+      }
+
+      #orderForm{
+        width:50%;
+      }
+
+      .formContainer .row{
+        width:30vw;
+      }
+
+      .toggleLable{
+        width:30%;
+      }
+
+      input{
+             margin-top:5px !important;
+         }
+    }
+      
+
+
+     </style>
+<body>
+
+  <nav>
+		<ul class="cd-primary-nav">
+			<li><a href="./homepage.html">The Cakery</a></li>
+			<li><a href="./about.html">About Us</a></li>
+			<li><a href="./product.html">Products</a></li>
+			<li><a href="./gallery.html">Gallery</a></li>
+			<li><a href="./contactpage.html">Contact Us</a></li>
+      <li class="mt-5"><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-facebook-f"></i></li>
+      <div class="d-flex justify-content-center">
+        <img src="./img/theCakeryLogo.svg" width="140">
+      </div>
+			
+		</ul>
+	</nav>
+
+    <header clas="row" id="headerIcons">
+        <div class="column col-4">
+            <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+            </div>
+        <div class="col-4 column">
+        <img  class="logoSize" src="./img/theCakeryLogo.svg">
+        </div>
+       
+      <div class="col-4 column">
+        <img id="cartIcon" src="./img/shoppingCartIcon.png" width="30">
+        </div>
+
+
+	</header>
+  <div class="cd-overlay-nav">
+		<span></span>
+	</div> <!-- cd-overlay-nav -->
+
+	<div class="cd-overlay-content">
+		<span></span>
+	</div> <!-- cd-overlay-content -->
+
+
+  
+
+    <!-- <img src="./img/thinking-face.gif"> -->
+
+   
+<!-- 
+    <div class="container d-flex justify-content-center">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Inquiry Form</label>
+        <div class="form-check form-switch d-flex justify-content-center align-items-center">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked flexSwitchCheckDefault" onclick="isChecked()">
+      </div>
+      <label class="form-check-label" for="flexSwitchCheckChecked">Order form</label>
+
+    </div> -->
+
+
+<!-- 
+    <div class="container d-flex justify-content-center align-items-center" >
+    
+      <div>Inquiry Form</div>
+      <div class="form-check form-switch d-flex justify-content-center align-items-center">
+      <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked flexSwitchCheckDefault" onclick="isChecked()">
+    </div>
+    <div>Order Form</div>
+   
+
+  </div> -->
+
+      <div class="wavyT"></div>
+
+
+    
+
+    <input type="checkbox" id="switch" onclick="isChecked()">
+    <div class="app">
+      <div class="body">
+    
+        <div class="phone">
+      
+    
+            </div>
+    
+            <label for="switch" class="p-0 toggleLable">
+              <div  class="toggle"></div>
+              <div class="names">
+                <p class="light">Inquiry Form</p>
+                <p class="dark">Order Form</p>
+              </div>
+            </label>
+    
+      </div>
+    
+    </div>
+    <div class="bigContainer inquiryFormBg formBg">
+          
+            <div id = "inquiryForm"  class="formContainer">
+                <form class="row">
+    
+                <h2>Inquiry Form</h2>
+                  <label for="fullName"> Full Name </label>
+                  <input type="text" id="fullName" name="fullName">
+    
+                  <label for="emailAddreass"> Email: </label>
+                  <input type="text" id="emailAddreass" name="emailAddreass">
+    
+    
+                  <label for="message"> Message: </label>
+                  <textarea id="message" name="message" placeholder="Write a message!" rows="4" cols="50" ></textarea>
+    
+                  <button class="btn mt-3" type="submit">Submit</button>
+                </form>
+            </div>
+  
+
+ 
+        
+
+            <div class="formContainer displayNone " id = "orderForm" >
+              
+                <form class="row ">
+                
+                    <h2>Order Form</h2>
+                    <p id="note"> * Any orders before 7 pm we can turn it around in 16 hours. </p>
+                    <label for="orderForm_FullName"> Full Name: </label>
+                    <input type="text" id="orderForm_FullName" name="fullName">
+      
+                    <label for="orderForm_email"> Email: </label>
+                    <input type="text" id="orderForm_email" name="email">
+    
+                    <label for="orderForm_phone"> Phone: </label>
+                    <input type="text" id="orderForm_phone" name="phone">
+    
+                    <label for="orderForm_date"> Date & time for a pickup: </label>
+                    <input class="mb-3" type="date" id="orderForm_date" name="date">
+                    <input type="time" id="orderForm_time" name="date">
+    
+    
+                    <label for="orderForm_theme"> Theme of your event </label>
+                    <input type="text" id="orderForm_theme" name="date" placeholder="optional">
+    
+                    <label for="flavour"> Select the flavour of a cake</label>
+                    <select class="pt-2 pb-2" name="flavour" id="flavour">
+                        <option value="select">Select</option>
+                        <option value="Vanilla">Vanilla</option>
+                        <option value="Strawberry">Strawberry</option>
+                        <option value="Chocolate">Chocolate</option>
+                        <option value="Red Velvet">Red Velvet</option>
+    
+                    </select>
+    
+    
+      
+      
+                    <label for="message"> Order Details: </label>
+                    <textarea rows="4" cols="100" id="orderForm_message" placeholder="write away your thoughts!" name="message"></textarea>
+    
+                    <label for="images">Upload images</label>
+                    <input class="ps-0 pe-0" type="file">
+                    <div id="dropBox"></div>
+    
+                    <button class="btn mt-3" type="submit">Submit</button>
+                  </form>
+            </div>
+
+        
+          </div>
+        
+   
+
+    <div class="wavyB"></div>
+    <div class="d-flex flex-column align-items-center">
+      <h3>Where are we located? </h3>
+      <h4 class="pb-3">We are in the heart of Yaletown!</h4>
+    </div>
+    <div class="row mb-5">
+    <div class="col-6" id="google_map"></div>
+    <div class="col-6" id="theCakeryShop"></div>
+    </div>
+
+    <div class="footerT"></div>  
+    <footer>
+      <div class="footer footerContainer row">
+       
+      
+       <div class="col-sm-12 col-md-12 column">
+         <img id="footerLogo" src="./img/theCakeryLogo.svg">
+       </div>
+  
+       <div  class="col-lg-4 d-none d-lg-block justify-content-center flex-column text-center">
+         <h3>Quick Links</h3>
+         <p>About the Cakery</p>
+         <p>Gallery</p>
+         <p>Products</p>
+         <p>Contact Us</p>
+       </div>
+     
+       
+       <div class="col-sm-12 col-md-5 col-lg-4 d-flex justify-content-center flex-column text-center">
+       
+         <h3>Find Us</h3>
+         <p>Address: 398 bute street, Vancouver, BC V6E 1Y9</p>
+         <p>Phone: 604-397-6590</p>
+         <p>Email: theCakery@gmail.com</p>
+       </div>
+  
+         <div class="col-sm-12 col-md-5 col-lg-4 justify-content-center flex-column text-center">
+         <h3>Hours:</h3>
+         <p>Monday to Fridy <br>8am - 4pm</p>
+         <p>Saturday and Sunday<br> 8am - 5pm</p>
+    
+       </div>
+       </div>
+     
+      
+  
+      </footer>
+
+              
+
+
+
+
+
+      <script async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfhDomu0iglfc6Eo9ixxnpdVjdUd5REBU&callback=initMap">
+  </script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- <script async
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap">
+</script> -->
+<script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfhDomu0iglfc6Eo9ixxnpdVjdUd5REBU&callback=initMap">
+</script>
+<script type="text/javascript">
+
+  function initMap(){
+          
+      // define my lat long corrdinates//
+  
+      var mylocation = {
+          lat: 49.282959, 
+           lng: -123.131573
+      }
+  
+      // define your map//
+      // great a map in this object//
+  
+      var map = new google.maps.Map(document.getElementById("google_map"),{
+          // set how close or far your map to be//
+          zoom:15,
+          center: mylocation
+            
+  });
+  
+     // plot your marker//
+     var marker = new google.maps.Marker({
+  
+      position:mylocation,
+      map:map
+  
+     })
+  }
+ 
+
+</script>
+
+        <script>
+            // const check = document.querySelector(".form-check-input");
+            
+            // // check.addEventListener("click", function(e){
+            // //     console.log(e.target.checked);
+            // // })
+            
+            function isChecked(){
+                // console.log(check.checked ===);
+            }
+                            formSwitch= {
+                                             status:true
+                                        }
+            
+            
+            
+                    function isChecked(){
+                        
+            
+                       
+                       console.log(formSwitch);
+                     
+                        document.getElementById("orderForm").classList.toggle("display"); 
+
+                        document.getElementById("inquiryForm").classList.toggle("displayNone"); 
+                       
+                       document.querySelector(".formBg").classList.toggle("orderFormBg");
+                       document.querySelector(".formBg").classList.toggle("inquiryFormBg");
+                       formSwitch.status = !formSwitch.status; 
+                    //    console.log(formSwitch.status);
+            
+                    }
+            
+            
+        </script>
+      
+    
+</body>
+</html>

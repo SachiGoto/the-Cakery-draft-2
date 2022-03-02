@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page
+    </title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+<link href="https://cdn.jsdelivr.net/gh/hoomanbahreini/bootstrap-half-and-quarter-grid/fractional-grid.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://www.marcoguglie.it/Codepen/RoundedAnimatedNav/js/velocity.min.js"></script>
+<script src="./theCakery.js" defer></script>
+</head>
+
+<style>
+
+    /* .wavyT{
+        height:60px;} */
+        #heroImageContent{
+       /* padding-left:5%; */
+       margin-top:15vh;
+    
+     }
+
+        .mobileHeroImage{
+        background-image:url("./img/heroImage1.png");
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:center;
+        width:100%;;
+        height:200px;
+    }
+
+    #mobileBtn{
+      
+      width:40%;
+      height:55px;
+    }
+
+    #mobileP{
+      width:60%; 
+      /* text-align: center;  */
+      padding-left:10px;
+      padding-top:20%;
+    }
+
+
+
+/* #wavyTDesktop{
+  background-image:url(./img/smallwaves.png);
+  background-size:cover;
+  height:20vh;
+  width:100vw;
+  margin-bottom:-1px;
+  background-repeat: no-repeat;
+} */
+
+#wavyTmobile{
+  background-image:url(./img/wavylineT.png);
+  background-size:cover;
+  height:15vh;
+  width:100vw;
+  margin-bottom:-1px;
+}
+
+/* .wavyBwFountain{
+  height:25vh;
+} */
+
+     
+    .carousel-item{
+        width:100%;
+        height:200px;
+        /* display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:flex-start; */
+        background-size:contain;
+        background-position:center;
+        background-repeat:no-repeat;
+        position:relative;
+    }
+
+
+/* 
+    #carousel1{
+        background-image:url("./img/heroImage1.png");
+        background-size:cover;
+        width:70vw;
+        height:50vh;
+    }
+
+
+    #carousel2{
+        background-image:url("./img/valentineHeroImg.png");
+        background-size:cover;
+    }
+
+    #carousel3{
+       
+        background-image:url("./img/stPatrickHeroImg.png");
+        background-size:cover;
+    } */
+
+    /* .wavyB{
+        height:50px;
+       
+    } */
+/* 
+    .fountainContainer{        
+       display:flex;
+       justify-content:center;
+    } */
+/* 
+    .fountain{
+        background-image:url("./img/chocolateFountain.svg");
+        background-repeat:no-repeat;
+        width:80px;
+        height:150px;
+        opacity:0.7;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin-top: 17px;
+       
+    } */
+
+    /* .fountain p{
+       text-align:center;
+    } */
+
+   
+
+    .box{
+        display:flex;
+        justify-content:center;
+        flex-direction:column;
+        text-align:center;
+        align-items: center;
+    }
+
+    #carouselitem1{
+        background-image:url(./img/bargeCakeFrame.png);
+        background-size:contain;
+        background-position:center;
+        background-repeat:no-repeat;
+       
+    }
+
+
+    #carouselitem2{
+        background-image:url(./img/truckConvoyFrame.png);
+        background-size:contain;
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+
+    #carouselitem3{
+        background-image:url(./img/panda.png);
+        background-size:contain;
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+
+    
+
+    /* h3{
+        text-align:center;
+    } */
+
+    #display img{
+        object-fit:cover;
+        width:100%;
+
+    }
+
+    #display2 img{
+        object-fit:cover;
+        width:100%;
+
+    }
+
+   
+ 
+  
+
+    
+
+
+      .movingBtn{
+       background-color:#dfc7dc;
+       box-shadow:-1px 3px 0px 0px #e3b9bc;
+       border-radius: 2.25rem !important;
+       /* font-size:10px !important; */
+       animation: mymove 2s infinite;
+       position:relative;
+       margin-left:14px;
+       border:#dfc7dc 1px solid;
+     }
+
+     .btn{
+      background-color:#dfc7dc;
+       box-shadow:-1px 3px 0px 0px #e3b9bc;
+       border:#dfc7dc 1px solid;
+       border-radius: 2.25rem !important;
+       /* width:50%; */
+
+     }
+
+    
+
+     @keyframes mymove{
+       0%{top:0px}
+       50%{top:-8px}
+       100%{top:0px;}
+       
+     }
+
+     .title{
+      text-align: center;
+
+     }
+
+     /* .shop{
+       font-size:18px !important;
+     } */
+    
+     .ctaBtn{
+       position:relative;
+       width:50%;
+       height:60px;
+     }
+
+     .shopContainer{
+       position:absolute;
+       left:38px;
+       top:17px;
+     }
+
+     .wiskImg{
+       position:absolute;
+       left:91px;
+       top:9px;
+       width:35px;
+     }
+
+     /* .wavyBSpirits{
+       height:58px;
+     } */
+
+     /* .instaBigContainer{
+       z-index:-1;
+     } */
+    
+  
+
+     #strawberryBtnz-index{
+       z-index:1;
+       margin-top:-3px;
+     }
+
+     #bgZ-index{
+       z-index:-1;
+     }
+
+     #imgZ-index{
+       z-index:2
+     }
+
+     @media(min-width:768px){
+
+      #heroImageBox{
+        background-image:url("./img/heroImage1.png");
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:center;
+        width:90%;;
+        height:40vh;
+        margin-left:5%;
+      }
+
+      #heroImageBox h2{
+        margin-right:45%;
+        padding-top:15%;
+      }
+   
+     /* .wavyBwFountain{
+       margin-bottom:25px;
+       height:35vh;
+     } */
+
+    @keyframes mymove{
+       0%{top:220px}
+       50%{top:200px}
+       100%{top:220px;}
+       
+     }
+
+     .wiskImg{
+       position:absolute;
+       left:70px;
+       top:-8px;
+       width:35px;
+     }
+
+
+     #heroImageContainer{
+
+    
+        background-image:url(./img/bargeCakeFrame.png);
+        background-size:contain;
+        background-position:center;
+        background-repeat:no-repeat;
+        height:50vh;
+        width:70vw;
+       
+    }
+     
+
+     /* .content{
+       left:30px;
+    
+     } */
+
+    .ctaBtn{
+       position:relative;
+       width:25%;
+       height:73px;
+       transform: translate(9vh, -16vh)
+      
+     }
+
+     .carousel-item{
+            height:300px;
+       
+            position:relative;
+          
+        }
+
+        .bigContainer{
+          padding-top:0px;
+        }
+      
+ 
+        /* .heroImageContent{
+      margin-left:0;
+      position: absolute;
+      left: 3%;
+      padding-left: 0;
+    } */
+
+     .btn{
+      font-size:22px !important;
+
+     }
+
+     .carousel-item button{
+       margin-left:17%;
+       
+     }
+    /* #space{
+        margin-top:120px;
+    } */
+
+    /* .fountain{
+        margin-top: 90px;
+    } */
+
+    /* .wavyT{
+        height:120px;
+    } */
+
+    #popularWaveT{
+      height:200px;
+    }
+
+    #popularContainer{
+      padding-bottom: 20px;
+    }
+
+    .content{
+        
+        padding-left:15%;
+    }
+
+    .title{
+      font-size:30px !important;
+    }
+
+        /* .wavyB{
+            height:150px;
+        } */
+
+    #cakerySpiritsImg{
+      width:50%;
+
+    }
+
+    }
+
+    @media(min-width:1200px){
+
+
+#wavyTmobile{
+ 
+  height:25vh;
+  width:100vw;
+  
+}
+
+      /* #wavyTDesktop{
+ 
+  height:14vh;
+  width:100vw;
+
+} */
+
+#heroImageBox{
+  height:60vh;
+  
+}
+
+#heroImageBox h2{
+  padding-top:10%;
+}
+
+      .heroImgBigContainer{
+        height:50vh;
+        padding-left:15vw;
+      }
+      .heroImagePosition{
+        position:absolute;
+        /* height:300px; */
+      
+        top:27vh;
+        left:17vh;
+      }
+
+      #wavyTop{
+        height:28vh;
+      }
+      .text{
+        width:70%;
+      }
+             
+             .carousel-item{
+                 /* height:500px; */
+                 position: relative;
+             }
+
+             /* .wavyB, .wavyT{
+            height:170px;
+        } */
+
+       
+
+        .heroImageContent{
+      margin-left:0;
+      position: absolute;
+      left: 15%;
+      padding-left: 0;
+      transform:translateY(-5vh);
+    }
+
+        /* .carousel-item button{
+          
+          margin-left:12%;
+        
+
+
+    } */
+
+    #stPatrickBtn{
+      transform:translateY(12vh);
+      margin-left:8%;
+    }
+
+          .ctaBtn{
+            width:30%;
+            height:95px;
+           transform:translate(19vh, -28vh);
+          }
+
+          .shopContainer{
+            left:104px;
+            top:14px;
+          }
+
+          .shopContainer p{
+            font-size:28px !important;
+          }
+
+          .wiskImg{
+            left:110px;
+            top:-5px;
+            width:57px;
+          }
+
+
+         #display{
+           margin-left:10%;
+           margin-right:10%;
+         }
+
+         #display div{
+            padding-bottom:1.0em !important;
+         }
+
+         .title{
+           font-size:45px !important;
+         }
+
+         p{
+           font-size:30px !important;
+         }
+      
+     
+
+     #display{
+       width:100%;
+     }
+
+     .wavyBwFountain{
+       position:relative;
+       margin-top:-2px;
+     }
+
+     .wavyBwFountain p{
+       position:absolute;
+       left: 40%;
+    top: 50%;
+  
+
+     }
+    }
+    
+
+</style>
+<body>
+
+
+  
+         
+	<nav>
+	  <ul class="cd-primary-nav">
+      <li><a href="./homepage.html">The Cakery</a></li>
+      <li><a href="./about.html">About Us</a></li>
+      <li><a href="./product.html">Products</a></li>
+      <li><a href="./gallery.html">Gallery</a></li>
+      <li><a href="./contactpage.html">Contact Us</a></li>
+      <li class="mt-5"><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-facebook-f"></i></li>
+      <div class="d-flex justify-content-center">
+        <img src="./img/theCakeryLogo.svg" width="140">
+      </div>
+      
+    </ul>
+	</nav>
+
+    <header clas="row" id="headerIcons">
+        <div class="column col-4">
+            <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+            </div>
+        <div class="col-4 column">
+        <img  class="logoSize" src="./img/theCakeryLogo.svg">
+        </div>
+       
+      <div class="col-4 column">
+        <img id="cartIcon" src="./img/shoppingCartIcon.png" width="30">
+        </div>
+
+	</header>
+
+	
+
+	<div class="cd-overlay-nav">
+		<span></span>
+	</div> <!-- cd-overlay-nav -->
+
+	<div class="cd-overlay-content">
+		<span></span>
+	</div> <!-- cd-overlay-content -->
+
+	
+        <!-- <section class=" mt-3 row d-flex align-items-center">
+            <nav class="col-4 navbar navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Navbar</a> -->
+                  <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">The Cakery</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About The Cakery</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Contact Us</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+              <div class="col-4">
+                
+                  <img src="./img/theCakeryLogo.svg">
+                 
+              </div>
+
+              <div class="col-2 p-0">
+                 
+            <img  src="./img/whisk.svg">
+              </div>
+
+              <div class="col-2">
+                  <img src="./img/cart.svg" width="20">
+              </div>
+        
+        </section>  -->
+    
+        <main class="cd-content">
+          <!-- your content here -->
+        
+        
+        </main> <!-- cd-content -->
+       <!-- <img src="./img/smallwave.svg"> -->
+        <!-- <div class="wavyT" id="wavyTop"></div> -->
+        <div id="wavyTmobile"> </div>
+          <!-- <div id="wavyTDesktop" class="d-none d-lg-block"></div> -->
+         
+
+       
+        <div class="bigContainer d-flex justify-content-center d-block d-md-none d-lg-none">
+          <div class="row mobileContainer">
+            
+            <h3 class="title">Welcome to the Cakery</h3>
+               <div class="mobileHeroImage align-items-start">
+                 <div class="heroImageContent">
+                
+                <p id="mobileP">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <!-- <button style="width:40%;" class="btn btn-primary ">Check out our products!</button> -->
+                <button  id="mobileBtn" class="  movingBtn">
+                  <div class="shopContainer">
+                  <h2  class="shop">Shop </h2>
+                </div>
+      
+                <img class="wiskImg" src="./img/whiskTransparentBg.png">
+              </button>
+                </div>
+               </div>
+              </div>
+           
+        </div>
+
+
+            <!-- <section class="container pb-1 heroImagePosition"> -->
+                <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> -->
+                  <!-- <div> -->
+                    <!-- <div class="carousel-indicators"> -->
+                      <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> -->
+                      <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button> -->
+                      <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div> -->
+                    <!-- <div class="carousel-inner"> -->
+                    
+        <div class="bigContainer  d-none d-md-block">
+                          <div id= "heroImageBox" >
+
+                         
+                              <h2 class="title">Welcome to <br>the Cakery!</h2>
+                              <!-- <p style="width:100%; text-align:center;">Lorem ipsum dolor sit amet!</p> -->
+                       
+                          <button class="movingBtn ctaBtn">
+                            <div class="shopContainer">
+                                <h2  class="shop">Shop </h2>
+                           
+                                 <img class="wiskImg" src="./img/whiskTransparentBg.png">
+                                </div>
+                            </button>
+                          
+                  
+                        </div>
+          </div>
+                      <!-- <div  id= "carousel2" class="carousel-item">
+                        <button class="movingBtn ctaBtn">
+                          <div class="shopContainer">
+                              <p  class="shop">Shop </p>
+                          </div>
+                               <img class="wiskImg" src="./img/whiskTransparentBg.png">
+                          </button>
+                       
+                      </div>
+                      <div  id= "carousel3" class="carousel-item">
+                        <button class="movingBtn ctaBtn" id="stPatrickBtn"><div class="shopContainer">
+                          <p  class="shop">Shop </p>
+                      </div>
+                           <img class="wiskImg" src="./img/whiskTransparentBg.png">
+                      </button>
+                        
+                      </div> -->
+                    <!-- </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button> 
+                  
+                  </div>  -->
+               
+            <!-- </section>  -->
+
+
+          <!-- <div class="wavyB">
+            <div class="fountainContainer">
+                <div class="fountain">
+                    <p>Follow the ricer for more!</p>
+                </div>
+                
+                </div>
+          </div> -->
+          <div class="wavyBwFountain">
+
+           <p class="d-none d-lg-block ">Follow the river for more!</p>
+          </div>
+
+          <h2 class="title">The Cakery Spirit!</h2>
+          <div id ="space" class="wavyT"></div>
+          <div class="bigContainer">
+           <section class="container">
+           
+           <div class="row">
+              <div class="col-12 box">
+                <img id="cakerySpiritsImg" src="./img/theCakerySpiritImg.png" width="150">
+              </div>
+               <div class="col-12 box ">
+                 
+                   <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum ipsam dolores, adipisci esse tempore totam porro! Mollitia assumenda! </p>
+               </div>
+               <div class="col-12 box">
+                   <!-- <img class="img" src="./img/theCakeryOwner.png" alt="owner"> -->
+                   <button class="btn"> About <br>the Cakery</button>
+               </div>
+              
+               </div>
+              
+           </section>
+         </div>
+           <div class="wavyB wavyBSpirits"></div>
+           <h2 class="title">Our newest wakiest creations!</h2>
+           <div class="wavyT"></div>
+          
+           <div class="bigContainer">
+            <section class="container d-flex flex-column align-items-center">
+            <div class="row">
+               
+
+
+                <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                    <div class="carousel-inner">
+                          <div class="carousel-item active" id="carouselitem1"></div>
+                          <div class="carousel-item" id="carouselitem2"></div>
+                          <div class="carousel-item" id="carouselitem3"></div>
+                    </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="col-12 box pt-3">
+                    
+                      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatum ipsam dolores!</p>
+                  </div>
+                  
+                </div>
+                <button class="btn mt-3">More <br> featured items!</button>
+            </section>
+            </div>
+
+
+                  <div class="wavyB"></div>
+
+
+                  <h3 class="title">We are popular</h3>
+                  <div class="wavyT" id="popularWaveT"></div>
+                  <div class="bigContainer" id="popularContainer">
+                   
+                   <div class="row" id="display"></div>
+                </div>
+                <div class="wavyB"></div>
+
+               
+                <h3 class="title">The Cakery is on Instagram!</h3>
+                <div class="wavyT"></div>
+
+                <div class="bigContainer z-index-n1" id="bgZ-index">
+                 
+                  <div class="row" id="display2">
+                      
+                      
+                    </div>
+                    <div class="row">
+                      <div class="d-flex flex-column align-items-center ">
+                        <div id="imgZ-index"><img src="./img/choc_straw_drip.png" width="150"></div>
+                      <button class="btn" id="strawberryBtnz-index">There's more <br> to see!</button>
+                  </div>
+                  </div>
+               </div>
+               <div class="wavyB"></div>
+
+               
+              <div class="wavyT"></div>
+                 <div class="bigContainer">
+                  <div class="container">
+                   <div class="row">
+                     <img class="col-4" src="./img/cakeDecoratingAward.png" width="90">
+                     <img class="col-4" src="./img/straight.png" width="90">
+                     <img class="col-4" src="./img/tasteCanadaAwards.png" width="90">
+                   </div>
+                   </div>
+                 
+                  </div>
+
+
+             <div class="wavyB"></div>
+             
+
+
+             <div class="footerT"></div>        
+  <footer>
+    <div class="footer footerContainer row">
+     
+     <div class="col-sm-12 col-md-12 column">
+       <img id="footerLogo" src="./img/theCakeryLogo.svg">
+     </div>
+
+     <div  class="col-lg-4 d-none d-lg-block justify-content-center flex-column text-center">
+       <h3>Quick Links</h3>
+       <p>About the Cakery</p>
+       <p>Gallery</p>
+       <p>Products</p>
+       <p>Contact Us</p>
+     </div>
+   
+     
+     <div class="col-sm-12 col-md-5 col-lg-4 d-flex justify-content-center flex-column text-center">
+     
+       <h3>Find Us</h3>
+       <p>Address: 398 bute street, Vancouver, BC V6E 1Y9</p>
+       <p>Phone: 604-397-6590</p>
+       <p>Email: theCakery@gmail.com</p>
+     </div>
+
+       <div class="col-sm-12 col-md-5 col-lg-4 justify-content-center flex-column text-center">
+       <h3>Hours:</h3>
+       <p>Monday to Fridy <br>8am - 4pm</p>
+       <p>Saturday and Sunday<br> 8am - 5pm</p>
+  
+     </div>
+     </div>
+   
+    
+
+    </footer>
+
+
+           
+ 
+    
+
+
+ <!-- <script>
+            jQuery(document).ready(function($){
+var overlayNav = $('.cd-overlay-nav'),
+overlayContent = $('.cd-overlay-content'),
+navigation = $('.cd-primary-nav'),
+toggleNav = $('.cd-nav-trigger');
+
+//inizialize navigation and content layers
+layerInit();
+$(window).on('resize', function(){
+window.requestAnimationFrame(layerInit);
+});
+
+//open/close the menu and cover layers
+toggleNav.on('click', function(){
+if(!toggleNav.hasClass('close-nav')) {
+//it means navigation is not visible yet - open it and animate navigation layer
+toggleNav.addClass('close-nav');
+
+overlayNav.children('span').velocity({
+  translateZ: 0,
+  scaleX: 1,
+  scaleY: 1,
+}, 500, 'easeInCubic', function(){
+  navigation.addClass('fade-in');
+});
+} else {
+//navigation is open - close it and remove navigation layer
+toggleNav.removeClass('close-nav');
+
+overlayContent.children('span').velocity({
+  translateZ: 0,
+  scaleX: 1,
+  scaleY: 1,
+}, 500, 'easeInCubic', function(){
+  navigation.removeClass('fade-in');
+  
+  overlayNav.children('span').velocity({
+    translateZ: 0,
+    scaleX: 0,
+    scaleY: 0,
+  }, 0);
+  
+  overlayContent.addClass('is-hidden').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
+    overlayContent.children('span').velocity({
+      translateZ: 0,
+      scaleX: 0,
+      scaleY: 0,
+    }, 0, function(){overlayContent.removeClass('is-hidden')});
+  });
+  if($('html').hasClass('no-csstransitions')) {
+    overlayContent.children('span').velocity({
+      translateZ: 0,
+      scaleX: 0,
+      scaleY: 0,
+    }, 0, function(){overlayContent.removeClass('is-hidden')});
+  }
+});
+}
+});
+
+function layerInit(){
+var diameterValue = (Math.sqrt( Math.pow($(window).height(), 2) + Math.pow($(window).width(), 2))*2);
+overlayNav.children('span').velocity({
+scaleX: 0,
+scaleY: 0,
+translateZ: 0,
+}, 50).velocity({
+height : diameterValue+'px',
+width : diameterValue+'px',
+top : -(diameterValue/2)+'px',
+left : -(diameterValue/2)+'px',
+}, 0);
+
+overlayContent.children('span').velocity({
+scaleX: 0,
+scaleY: 0,
+translateZ: 0,
+}, 50).velocity({
+height : diameterValue+'px',
+width : diameterValue+'px',
+top : -(diameterValue/2)+'px',
+left : -(diameterValue/2)+'px',
+}, 0);
+}
+});
+</script>             -->
+
+<!-- <img src="./img/instaImages/pinkCake.jpg"> -->
+       
+<script>
+
+
+
+let listOfImage =["./img/magazines:tvshows/bonapetite.jpg", "img/magazines:tvshows/canadianBakingShow.jpg", "img/magazines:tvshows/foodNetwork.jpg","./img/magazines:tvshows/scout.jpg","./img/magazines:tvshows/straight.jpg", "./img/magazines:tvshows/vancouverMagazine.png", "./img/magazines:tvshows/vancouverRestaurantAwards.jpg", "./img/magazines:tvshows/vancouverSun.jpg", "./img/magazines:tvshows/youGottaEatHere.jpg","img/magazines:tvshows/chefMagazine.jpg","./img/magazines:tvshows/foodDrink.jpg","./img/magazines:tvshows/canadianLiving.jpg"];
+
+for (let i=0; i<12; i++){
+  if(i<8){
+    document.getElementById("display").innerHTML += `<div class="col-3 col-md-4 col-lg-2 mb-2"> <img src=" ${listOfImage[i]}"></div>` 
+  }else if(i==8){
+    document.getElementById("display").innerHTML += `<div class="d-none d-md-block col-sm-2 col-md-4 col-lg-2 mb-2 "> <img src=" ${listOfImage[i]}"></div>` 
+  }else if(i>8){
+    document.getElementById("display").innerHTML += `<div class="d-none d-lg-block col-lg-2  mb-2 "> <img src=" ${listOfImage[i]}"></div>
+    
+  
+    
+    
+    
+    
+    
+    ` 
+  }
+};
+
+// for(let i=8; i<10; i++){
+//   document.getElementById("display").innerHTML += `<div class="col-3 col-lg-3 mb-2 d-sm-none d-md-block"> <img src=" ${listOfImage[i]}"></div>` 
+// }
+
+
+let listOfInstaImage=[
+"./img/instaImages/benAndHolly.jpg", "./img/instaImages/cucti.jpg","./img/instaImages/divorceCake.jpg", "./img/instaImages/minionsInsta.jpg", "./img/instaImages/mirrorball.jpg" ,"./img/instaImages/rabitCake.jpg","./img/instaImages/poutine.jpg","./img/instaImages/pinkCake.jpg"];
+
+for (let i=0; i<listOfInstaImage.length; i++){
+
+document.getElementById("display2").innerHTML += `<div class="col-5 col-lg-3 mb-4"> <img src=" ${listOfInstaImage[i]}"></div>
+
+
+
+
+
+
+` 
+};
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,732 @@
+@font-face {
+  font-family: Or_Lemmen;
+  src: url(./OrLemmen-Regular.otf);
+}
+
+*{
+  color:#495968;
+}
+.logoSize {
+  width: 35%;
+}
+.fa-brands{
+  font-size:5vh;
+  margin-left:7vw;
+}
+
+.ctaBtn:hover{
+  // opacity:0.9;
+  // background-color:#dfc7dc;
+    background-color:#f0e9ef;
+
+}
+
+.ctaBtn{
+  transition:background-color 0.2s ease;
+}
+
+.btn:hover{
+  opacity:0.8;
+}
+
+#footerLogo{
+  width:30%;
+}
+
+body {
+  font-size: 100%;
+  font-family: "PT Sans", sans-serif;
+  color: #091d23;
+  /* background-color: #ffb441; */
+}
+
+header{
+ padding-top:3vh;
+ padding-bottom:3vh;
+}
+
+
+#headerIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: #212529;
+  text-decoration: none;
+}
+
+
+
+* {
+  font-family: Or_Lemmen;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80% !important;
+}
+
+.btn {
+  background-color: #dfc7dc !important;
+  box-shadow: -1px 3px 0px 0px #e3b9bc !important;
+  border: #dfc7dc 1px solid !important;
+  border-radius: 2.25rem !important;
+  width: 50%;
+}
+
+.btn a {
+  color: black;
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 24px !important;
+  text-align: center;
+}
+
+h2 {
+  font-size: 22px !important;
+}
+
+h3 {
+  font-size: 18px !important;
+}
+
+p {
+  font-size: 12px !important;
+}
+
+.row {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.container-fluid {
+  padding-left: 0px !important;
+}
+
+.bigContainer {
+  background-color: #F4E1CB;
+}
+
+.wavyT {
+  width: 100vw;
+  height: 13vh;
+  background-image: url("./img/wavylineT.png");
+  background-size: cover;
+  padding-bottom: 0px;
+  margin-bottom: -1px;
+}
+
+.wavyBwFountain {
+  background-image: url("./img/chocolateFountainwidthWave.svg");
+  background-size: contain;
+  width: 100vw;
+  height:25vh;
+  background-repeat: no-repeat;
+  margin-top: -1px;
+}
+
+.wavyB {
+  width: 100vw;
+  height: 10vh;
+  background-image: url("./img/wavylineB.png");
+  background-size: cover;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-top: -1px;
+}
+
+.featureItemRow, .productsRow, .logosRow {
+  display: flex;
+  justify-content: center;
+}
+
+.featureItem {
+  width: 80% !important;
+  height: 210px;
+  background-color: #f1f1f1;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.logoBox {
+  height: 100px;
+  background-color: #f1f1f1;
+}
+
+.footerT {
+  // background-image: url("./img/fotterwavyLines1-01.png");
+    background-image: url("./img/fotterwavyLines1-02.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90px;
+  padding-bottom:-1px;
+  
+}
+
+.footer {
+  background-image: url("./img/fotterwavyLinesSquare-01.png");
+  width: 100%;
+  padding-bottom: 200px !important;
+  background-size: contain;
+}
+
+
+
+footer .row {
+  align-items: flex-start;
+}
+
+footer .col-12 {
+  width: 80% !important;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 35px !important;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px !important;
+  }
+  
+  h3 {
+    font-size: 20px !important;
+  }
+  
+  p {
+    font-size: 12px !important;
+  }
+  .logoSize {
+    width: 40%;
+  }
+  p {
+    font-size: 20px !important;
+  }
+
+  .wavyT{
+
+   width:100vw;
+    height:20vh;
+  }
+
+  .wavyB{
+
+    width:100vw;
+    height:20vh;
+  }
+
+  // .wavyB{
+  //   margin-bottom:30px;
+  // }
+
+  .wavyBwFountain {
+    background-image: url("./img/chocolateFountainwidthWave.svg");
+    background-size: contain;
+    height: 360px;
+    background-repeat: no-repeat;
+    width:100vw;
+    height:35vh;
+  }
+
+  #cartIcon {
+    width: 50px;
+  }
+
+  .footer {
+    min-height: 700px;
+    width: 100%;
+    background-image: url("./img/fotterwavyLinesSquare-01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #footerLogo{
+    width:25%;
+  }
+
+  footer p {
+    font-size: 25px !important;
+  }
+
+  footer h3 {
+    font-size: 30px !important;
+  }
+
+  .footerT {
+    height: 115px;
+  }
+}
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 40px !important;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 35px !important;
+  }
+  
+  h3 {
+    font-size: 25px !important;
+  }
+  
+  p {
+    font-size: 18px !important;
+  }
+  
+  .logoSize {
+    width: 30%;
+  }
+
+  // .wavyB {
+  //   height: 100vh;
+  // }
+
+  .bigContainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .footerT {
+    min-height: 140px;
+  }
+
+  .btn {
+    width: 30%;
+  }
+
+  .frontImg {
+    background-size: cover;
+    width: 50%;
+  }
+
+  .wavyBwFountain {
+    background-image: url("./img/chocolateFountainwidthWave.svg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    margin-top: -2px;
+  }
+
+  .backImg svg {
+    position: absolute;
+    background-color: white;
+  }
+
+  .box1 {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.75;
+    color: red;
+  }
+
+  .box2 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .box2 svg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  #footerLogo {
+    width: 40%;
+  }
+
+  .wavyT{
+    height:25vh;
+    width:100vw;
+  }
+
+  .wavyB{
+    height:25vh;
+    width:100vw;
+  }
+
+  #footerLogo{
+    width:16%;
+  }
+
+}
+
+
+
+// --------------------------------- nav bar
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::after, *::before {
+  content: "";
+}
+html, body {
+  height: 100%;
+}
+
+header {
+  z-index: 3;
+}
+
+.cd-logo, .cd-nav-trigger {
+  position: fixed;
+  display: inline-block;
+}
+
+/* .cd-logo {
+  top: 28px;
+  left: 5%;
+} */
+/* .cd-logo img {
+  display: block;
+} */
+.cd-nav-trigger {
+  height: 44px;
+  width: 44px;
+  z-index: 5;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.cd-nav-trigger .cd-icon {
+  /* icon created in CSS */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  display: inline-block;
+  width: 18px;
+  height: 3px;
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+.cd-nav-trigger .cd-icon::before, .cd-nav-trigger .cd-icon:after {
+  /* upper and lower lines of the menu icon */
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* apply transition to transform property */
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.cd-nav-trigger .cd-icon::before {
+  -webkit-transform: translateY(-6px) rotate(0deg);
+  -moz-transform: translateY(-6px) rotate(0deg);
+  -ms-transform: translateY(-6px) rotate(0deg);
+  -o-transform: translateY(-6px) rotate(0deg);
+  transform: translateY(-6px) rotate(0deg);
+}
+
+.cd-nav-trigger .cd-icon::after {
+  -webkit-transform: translateY(6px) rotate(0deg);
+  -moz-transform: translateY(6px) rotate(0deg);
+  -ms-transform: translateY(6px) rotate(0deg);
+  -o-transform: translateY(6px) rotate(0deg);
+  transform: translateY(6px) rotate(0deg);
+}
+
+.cd-nav-trigger::before, .cd-nav-trigger::after {
+  /* 2 rounded colored backgrounds for the menu icon */
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+}
+
+.cd-nav-trigger::before {
+  background-color: #DFC6DC;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.cd-nav-trigger::after {
+  background-color: #F4E1CB;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.cd-nav-trigger.close-nav::before {
+  /* user clicks on the .cd-nav-trigger element - 1st rounded background disappears */
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+
+.cd-nav-trigger.close-nav::after {
+  /* user clicks on the .cd-nav-trigger element - 2nd rounded background appears */
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.cd-nav-trigger.close-nav .cd-icon {
+  /* user clicks on the .cd-nav-trigger element - transform the icon */
+  background-color: rgba(255, 255, 255, 0);
+  /* background-color: white; */
+}
+
+.cd-nav-trigger.close-nav .cd-icon::before, .cd-nav-trigger.close-nav .cd-icon::after {
+  background-color: #272626;
+}
+
+.cd-nav-trigger.close-nav .cd-icon::before {
+  -webkit-transform: translateY(0) rotate(45deg);
+  -moz-transform: translateY(0) rotate(45deg);
+  -ms-transform: translateY(0) rotate(45deg);
+  -o-transform: translateY(0) rotate(45deg);
+  transform: translateY(0) rotate(45deg);
+}
+
+.cd-nav-trigger.close-nav .cd-icon::after {
+  -webkit-transform: translateY(0) rotate(-45deg);
+  -moz-transform: translateY(0) rotate(-45deg);
+  -ms-transform: translateY(0) rotate(-45deg);
+  -o-transform: translateY(0) rotate(-45deg);
+  transform: translateY(0) rotate(-45deg);
+}
+
+.cd-primary-nav {
+  /* by default it's hidden */
+  position: fixed;
+  // left: -12%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 80px 5%;
+  z-index: 3;
+  background-color: #DFC6DC;
+  overflow: auto;
+  /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+  -webkit-overflow-scrolling: touch;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.3s;
+  -moz-transition: visibility 0s, opacity 0.3s;
+  transition: visibility 0s, opacity 0.3s;
+  list-style-type: none;
+}
+
+.cd-primary-nav li {
+  margin: 1.6em 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.cd-primary-nav a {
+  font-size: 20px;
+  font-size: 1.25rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  transition: color 0.2s;
+  text-decoration: none;
+  color: #091d23;
+}
+
+.no-touch .cd-primary-nav a:hover {
+  color: #ffffff;
+}
+
+.cd-primary-nav.fade-in {
+  /* navigation visible at the end of the circle animation */
+  visibility: visible;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-primary-nav li {
+    margin: 2em 0;
+  }
+
+  .cd-primary-nav a {
+    font-size: 28px;
+    font-size: 1.75rem;
+  }
+
+  .cd-nav-trigger {
+    height: 65px;
+    width: 65px;
+  }
+
+  .cd-icon {
+    width: 32px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-primary-nav li {
+    margin: 2.6em 0;
+  }
+
+  .cd-primary-nav a {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
+.cd-overlay-nav, .cd-overlay-content {
+  /* containers of the 2 main rounded backgrounds - these containers are used to position the rounded bgs behind the menu icon */
+  position: fixed;
+  top: 18px;
+  right: 5%;
+  height: 4px;
+  width: 4px;
+  -webkit-transform: translateX(-20px) translateY(20px);
+  -moz-transform: translateX(-20px) translateY(20px);
+  -ms-transform: translateX(-20px) translateY(20px);
+  -o-transform: translateX(-20px) translateY(20px);
+  transform: translateX(-20px) translateY(20px);
+}
+
+.cd-overlay-nav span, .cd-overlay-content span {
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+
+.cd-overlay-nav.is-hidden, .cd-overlay-content.is-hidden {
+  /* background fades out at the end of the animation */
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
+}
+
+.cd-overlay-nav {
+  /* main rounded colored bg 1 */
+  z-index: 2;
+}
+
+.cd-overlay-nav span {
+  /* background-color: #091d23; */
+  background-color: white;
+}
+
+.cd-overlay-content {
+  /* main rounded colored bg 2 */
+  z-index: 4;
+}
+
+.cd-overlay-content span {
+  background-color: #F4E1CB;
+}
